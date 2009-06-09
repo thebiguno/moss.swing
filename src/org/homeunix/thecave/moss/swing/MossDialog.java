@@ -126,6 +126,12 @@ public class MossDialog extends JDialog implements StandardContainer, StandardWi
 		return null;
 	}
 	
+	public void closeWindowWithoutPrompting(){
+		this.setVisible(false);
+		this.dispose();
+	}
+
+	
 	public void clear() {}
 	
 	public void initPostPack() {}

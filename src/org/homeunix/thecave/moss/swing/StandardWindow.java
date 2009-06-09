@@ -54,6 +54,23 @@ public interface StandardWindow extends StandardContainer {
 	 * @return
 	 */
 	public Object closeWindow();
+
+	/**
+	 * The method used to close the window without checking canClose().
+	 * @return
+	 */
+	public void closeWindowWithoutPrompting();
+	
+	/**
+	 * Checks if you can close the window.  The default implementation MUST return true always;
+	 * you can override this to check conditions, and perhaps prompt the user for a save
+	 * or something before returning.  If this method returns false, the close operation
+	 * is cancelled.
+	 *  
+	 * @return Returns true if you can close the window, false otherwise. 
+	 */
+	public boolean canClose();
+	
 	
 	/**
 	 * A method which is called after the pack() method in openWindow,
