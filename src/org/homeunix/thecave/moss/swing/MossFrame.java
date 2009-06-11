@@ -31,7 +31,7 @@ public class MossFrame extends JFrame implements StandardWindow, StandardContain
 	private boolean alreadyInit = false;
 	private final Object key; //Key into openFrames to determine if the frame is already open
 	private final ApplicationModel application;
-
+	private boolean documentBasedApplication = true; //Determines some OSX behaviour, such as exit on last window close.
 
 	/**
 	 * Creates a new MossFrame.
@@ -162,7 +162,9 @@ public class MossFrame extends JFrame implements StandardWindow, StandardContain
 		// we close the program.
 		// On Macintosh, it is the correct behaviour to leave applications running even without
 		// any active windows, so we skip it for this OS.
-		if (!OperatingSystemUtil.isMac() && application.getOpenFrames().size() == 0){
+		if ((!OperatingSystemUtil.isMac()
+				|| !isDocumentBasedApplication())
+				&& application.getOpenFrames().size() == 0){
 			Logger.getLogger(MossFrame.class.getName()).finest("Final window has closed; exiting application");
 			System.exit(0);
 		}
@@ -221,5 +223,12 @@ public class MossFrame extends JFrame implements StandardWindow, StandardContain
 	public void requestFocusInApplication() {
 		this.setVisible(true);
 		this.requestFocusInWindow();		
+	}
+	
+	public boolean isDocumentBasedApplication() {
+		return documentBasedApplication;
+	}
+	public void setDocumentBasedApplication(boolean documentBasedApplication) {
+		this.documentBasedApplication = documentBasedApplication;
 	}
 }
