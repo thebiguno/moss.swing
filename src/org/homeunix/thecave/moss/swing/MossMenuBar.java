@@ -51,6 +51,12 @@ public class MossMenuBar extends JMenuBar implements StandardMenu {
 
 		super.remove(comp);
 	}
+	
+	@Override
+	public void removeAll() {
+		super.removeAll();
+		subMenuItems.clear();
+	}
 
 	public MossFrame getFrame() {
 		return frame;
