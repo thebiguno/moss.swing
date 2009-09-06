@@ -13,8 +13,7 @@ import javax.swing.AbstractListModel;
 import javax.swing.ComboBoxModel;
 import javax.swing.text.JTextComponent;
 
-import org.homeunix.thecave.moss.collections.FilteredList;
-
+import ca.digitalcave.moss.collections.FilteredList;
 import ca.digitalcave.moss.swing.MossHintComboBox;
 
 public class AutoCompleteMossHintComboBoxModel<T> extends AbstractListModel implements ComboBoxModel {

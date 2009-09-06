@@ -17,7 +17,7 @@ import java.util.EventObject;
 
 import javax.swing.event.EventListenerList;
 
-import org.homeunix.thecave.moss.common.OperatingSystemUtil;
+import ca.digitalcave.moss.common.OperatingSystemUtil;
 
 /**
  * A simple search field, similar in layout to the NSSearchField on the Macintosh.

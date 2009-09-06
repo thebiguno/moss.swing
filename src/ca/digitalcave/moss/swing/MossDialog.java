@@ -13,8 +13,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 
-import org.homeunix.thecave.moss.common.OperatingSystemUtil;
-
+import ca.digitalcave.moss.common.OperatingSystemUtil;
 import ca.digitalcave.moss.swing.exception.WindowOpenException;
 
 public class MossDialog extends JDialog implements StandardContainer, StandardWindow {

@@ -5,8 +5,6 @@ package ca.digitalcave.moss.swing;
 
 import javax.swing.JPanel;
 
-import ca.digitalcave.moss.swing.StandardContainer;
-
 public class MossPanel extends JPanel implements StandardContainer {
 	public static final long serialVersionUID = 0;
 	

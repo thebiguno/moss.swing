@@ -16,7 +16,7 @@ import java.text.NumberFormat;
 
 import javax.swing.JTextField;
 
-import org.homeunix.thecave.moss.common.OperatingSystemUtil;
+import ca.digitalcave.moss.common.OperatingSystemUtil;
 
 /**
  * @author wyatt

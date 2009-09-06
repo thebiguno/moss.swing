@@ -3,8 +3,8 @@
  */
 package ca.digitalcave.moss.swing;
 
-import org.homeunix.thecave.moss.application.document.StandardDocument;
-import org.homeunix.thecave.moss.common.OperatingSystemUtil;
+import ca.digitalcave.moss.application.document.StandardDocument;
+import ca.digitalcave.moss.common.OperatingSystemUtil;
 
 
 /**

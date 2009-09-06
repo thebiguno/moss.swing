@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 import javax.swing.UIManager;
 
-import org.homeunix.thecave.moss.common.OperatingSystemUtil;
+import ca.digitalcave.moss.common.OperatingSystemUtil;
 
 /**
  * Simplifies the setting of Java Look and Feels.  Call the method without 

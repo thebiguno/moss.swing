@@ -14,8 +14,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 
-import org.homeunix.thecave.moss.common.OperatingSystemUtil;
-
+import ca.digitalcave.moss.common.OperatingSystemUtil;
 import ca.digitalcave.moss.swing.exception.WindowOpenException;
 
 /**
