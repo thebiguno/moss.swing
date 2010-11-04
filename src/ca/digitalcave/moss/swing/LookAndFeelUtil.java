@@ -21,7 +21,7 @@ import ca.digitalcave.moss.common.OperatingSystemUtil;
 public class LookAndFeelUtil {
 
 	public static final String QUAQUA = "ch.randelshofer.quaqua.QuaquaLookAndFeel";
-	public static final String WINLAF = "net.java.plaf.windows.WindowsLookAndFeel";
+	public static final String WINDOWS_LNF = "com.sun.java.swing.plaf.windows.WindowsLookAndFeel ";
 	
 	/**
 	 * Tries to set a good look and feel based on the operating system and available 
@@ -58,7 +58,7 @@ public class LookAndFeelUtil {
 		}
 		if (OperatingSystemUtil.isWindows()){
 			//Include required properties here.
-			if (setLookAndFeelInternal(WINLAF))
+			if (setLookAndFeelInternal(WINDOWS_LNF))
 				return;
 		}
 		if (setLookAndFeelInternal(UIManager.getSystemLookAndFeelClassName()))

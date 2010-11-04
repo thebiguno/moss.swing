@@ -1,3 +1,6 @@
+2.1.0.1 - November 3 2010
+-Changed Windows LnF from WINLAF (which hasn't been updated in some time) to the default Windows LnF.  This should hopefully fix problems with black menus in Vista.
+
 2.1.0.0 - September 6 2009
 -Renamed packages to ca.digitalcave
 
