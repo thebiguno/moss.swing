@@ -347,7 +347,7 @@ public class MossDecimalField extends JTextField implements KeyListener, FocusLi
 			pastedData = pastedData.replaceAll("[^0-9,\\.]", "");
 			double pastedValue = Double.parseDouble(pastedData);
 			pastedValue = pastedValue * Math.pow(10, maxDecimalPlaces);
-			this.setValue((long) pastedValue);
+			this.setValue(Math.round(pastedValue));
 		} 
 		catch (Exception ex) {
 			pastedData = ex.toString();
