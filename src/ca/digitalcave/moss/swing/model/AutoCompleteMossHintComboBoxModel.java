@@ -73,8 +73,10 @@ public class AutoCompleteMossHintComboBoxModel<T> extends AbstractListModel impl
 						&& e.getKeyCode() != KeyEvent.VK_META
 						&& e.getKeyCode() != KeyEvent.VK_CANCEL) {
 					String text = editor.getText();
+					int caretPosition = editor.getCaretPosition();
 					updateModel();
 					editor.setText(text);
+					editor.setCaretPosition(caretPosition);
 
 					//Cycle popup to refresh size
 					comboBox.setPopupVisible(false);

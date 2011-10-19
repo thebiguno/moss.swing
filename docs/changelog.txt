@@ -1,3 +1,6 @@
+2.1.0.3 - October 19 2011
+-Fixed bug where you can't type in the description pulldown anywhere except the end of the line.  (Thanks to Toomas Remmelg for this patch)
+
 2.1.0.2 - July 11 2011
 -Fixed copy / paste bug caused by double to long rounding error
 
