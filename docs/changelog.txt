@@ -1,3 +1,6 @@
+2.1.0.5 - February 8 2012
+-Fixed bug where you could not paste negative values into MossDecimalField
+
 2.1.0.4 - January 25 2012
 -Added support for pasting values from other locales into MossDecimalFeild
 
